@@ -1,0 +1,163 @@
+/* HOME ----------------------------------------------------*/
+
+/* Section 1 BANNER */
+
+.carousel-inner {
+  img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+  }
+
+  .carousel-item {
+    min-height: 90vh;
+    background-position: center;
+    background-size: cover;
+
+    .container {
+      position: absolute;
+      padding: 0 20%;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+
+      h1,
+      h2 {
+        color: #ff6666;
+        font-size: 45px;
+        margin: 0;
+      }
+
+      p {
+        color: white;
+        font-size: 20px;
+        text-align: center;
+        padding: 1.5rem;
+      }
+    }
+  }
+}
+
+/* Section 2 CARACTERISTICAS FLEXBOX */
+
+.sectionDos {
+  @extend %flexbox_cuadro;
+  background-color: $green-bl;
+  color: $white;
+
+  div {
+    width: 15%;
+    margin: 0 3rem;
+    padding: 4rem 0;
+  }
+}
+
+/* Section 3 TABLA LINEAS */
+
+.sectionTres {
+  text-align: center;
+
+  h2 {
+    padding: 4rem;
+    text-align: center;
+  }
+}
+
+/* Lineas */
+
+#lineas {
+  h2 {
+    padding: 2rem;
+    text-align: center;
+    color: $green-bl;
+
+    @media only screen and (max-width: 768px) {
+      color: $white;
+    }
+  }
+
+  div {
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap row;
+
+    .parent {
+      width: 50%;
+      overflow: hidden;
+
+      @media only screen and (max-width: 1024px) {
+        width: 100%;
+      }
+
+      .child {
+        padding: 8rem 0;
+        width: 100%;
+        background-size: cover;
+        transition: 1.1s;
+      }
+      &:hover .child {
+        transform: scale(1.2);
+      }
+    }
+  }
+}
+
+/* Section 4 NOSOTROS */
+#nosotros {
+  background-color: $black;
+  padding: 5% 0;
+  div {
+    background-image: url(../img/bird-texture.jpg);
+    background-size: cover;
+    div {
+      background-image: none;
+      background-color: $black;
+      text-align: center;
+      margin: 0 25%;
+      padding: 4rem 0;
+      h2 {
+        color: $orangepink;
+      }
+      p{
+        color: $white;
+        text-align: center;
+        margin: 1rem;
+      }
+      @media only screen and (max-width: 768px) {
+        margin: 0 10%;
+      }
+    }
+  }
+}
+
+/* Section 5 CONTACTO MAPA */
+
+#contacto {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  @media only screen and (max-width: 1200px) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  iframe {
+    @media only screen and (max-width: 1200px) {
+      width: 100%;
+      order: 2;
+    }
+  }
+
+  div {
+    margin: 2rem;
+    text-align: left;
+
+    form {
+      textarea {
+        width: 100%;
+      }
+    }
+  }
+}

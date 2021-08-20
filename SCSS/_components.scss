@@ -1,0 +1,35 @@
+/* Componentes */
+
+
+%banner {
+  background-blend-mode: darken;
+  background-position: top;
+  background-size: cover;
+  padding: 120px 0;
+  text-align: center;
+} 
+
+%flexbox_cuadro {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-flow: wrap row;
+  text-align: center;
+}
+
+.botonBanner {
+  background-color: $orangepink;
+color: $white;
+font-size: 20px;
+padding: 16px 40px;
+border-radius: 32px;
+display: inline-block;
+
+&:hover {
+  background-color: $white;
+  color: $green;
+}
+}
+
+
+
