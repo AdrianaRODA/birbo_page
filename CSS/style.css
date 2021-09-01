@@ -137,7 +137,7 @@ footer a {
   background-color: #1a292b;
   color: white;
 }
-.sectionDos div {
+.sectionDos span {
   width: 15%;
   margin: 0 3rem;
   padding: 4rem 0;
@@ -185,6 +185,99 @@ footer a {
 }
 #lineas div .parent:hover .child {
   transform: scale(1.2);
+}
+
+/* Section FAVORITOS*/
+#fav {
+  min-height: 80vh;
+}
+#fav h2 {
+  color: white;
+  text-align: center;
+  padding: 2rem;
+  background-color: #ff6666;
+}
+#fav .box-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0;
+  width: 85%;
+  margin: 0 auto;
+}
+#fav .box-container .box {
+  flex: 1 1 20rem;
+  /*border: 0.1rem solid rgba(0, 0, 0, 0.3);*/
+  overflow: hidden;
+  position: relative;
+  margin: 1rem 2rem;
+}
+#fav .box-container .box .info h3 {
+  padding: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ff6666;
+}
+#fav .box-container .box .info .subInfo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  border-top: 0.1rem solid rgba(0, 0, 0, 0.3);
+}
+#fav .box-container .box .info .subInfo .price {
+  color: #ff3300;
+  font-size: 1rem;
+}
+#fav .box-container .box .info .subInfo .price span {
+  color: #666;
+  font-size: 0.8rem;
+  text-decoration: line-through;
+}
+#fav .box-container .box .info .subInfo .stars i {
+  color: orange;
+  font-size: 1rem;
+}
+#fav .box-container .box .image {
+  height: 20rem;
+  padding: 0;
+  text-align: center;
+  background: #f0f0f0;
+}
+#fav .box-container .box .image img {
+  height: 100%;
+  object-fit: cover;
+}
+#fav .box-container .box .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20rem;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: scale(0);
+}
+#fav .box-container .box .overlay a {
+  font-size: 1.5rem;
+  padding: 1rem 1.5rem;
+  background: #fff;
+  color: #666;
+  margin: 1rem;
+  transform: translateY(-15rem);
+  transition-delay: calc(0.1s);
+}
+#fav .box-container .box:hover .overlay {
+  transform: scale(1);
+}
+#fav .box-container .box:hover .overlay a {
+  transform: translateY(0rem);
+}
+#fav .box-container .box:hover .overlay a:hover {
+  color: #ff6666;
 }
 
 /* Section 4 NOSOTROS */
@@ -253,6 +346,11 @@ footer a {
   font-size: 45px;
   margin: 0;
 }
+.banner2 h1 span {
+  display: block;
+  background-color: #62c9c3;
+  color: white;
+}
 .banner2 div {
   text-align: center;
   width: 50%;
@@ -268,6 +366,11 @@ footer a {
   color: #ff6666;
   font-size: 45px;
   margin: 0;
+}
+.banner3 h1 span {
+  display: block;
+  background-color: black;
+  color: #ccac00;
 }
 .banner3 div {
   text-align: center;

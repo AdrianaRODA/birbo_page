@@ -34,10 +34,9 @@
 
     <!--Inicio header --------------------------------------------------------------------------------------------->
 
-    <header>
-      <div class="container"></div>
-      <nav class="navbar sticky-top navbar-expand-lg navbar-dark" style= "background-color: black">
-        <a class="navbar-brand">
+    <header class="sticky-top">
+      <nav class="navbar navbar-expand-lg navbar-dark" style= "background-color: black">
+        <a class="navbar-brand" href="index.html">
           <img src="img/bird.png" alt="BirboLogo" width="120px" style="margin: 0 1rem;">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -49,7 +48,8 @@
                 <a class="nav-link" href="index.html">Inicio</a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" 
+                href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Tienda
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -78,12 +78,12 @@
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <!--<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>-->
         </div>
+
         <div class="carousel-inner">
           <div class="carousel-item active" style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(img/book3.jpg);">
             <div class="container">
-            <h1>Libretas hechas con el corazón</h1>
+            <h1>Libretas hechas con el corazón ❤️</h1>
         <p>
           Hechas total y cuidadosamente con nuestras manos, 100% artesanales. 
         </p>
@@ -98,7 +98,7 @@
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere
             aliquid distinctio atque at unde similique, 
           </p>
-          <a href="#lineas" class="botonBanner">¡Descúbrelos!</a>
+          <a href="#lineas" class="botonBanner">¡Quiero verlos!</a>
 
         </div>
           </div>
@@ -121,14 +121,18 @@
 
     <section class="sectionDos">
 
-      <div>Planners Atemporales</div>
-      <div>Cuadernos únicos</div>
-      <div>100% artesanales y hechos a mano</div>
-      <div>Totalmente personalizables</div>
+      <span>Planners Atemporales</span>
+      <span>Cuadernos únicos</span>
+      <span>100% artesanales y hechos a mano</span>
+      <span>Totalmente personalizables</span>
 
     </section>
 
     <!--Fin sección 2-->
+
+
+    
+
 
     <!-- Inicio sección 3--------------------------------------------------------------------------------------------->
 
@@ -148,6 +152,165 @@
     </section>
 
     <!--Fin sección 3-->
+
+
+    <!-- Sección FAVORITOS --------------------------------------------------------------------------------------------->
+    <section class="fav" id="fav">
+
+      <h2 class="heading"> <span>✨Los favoritos✨</span> </h2>
+      
+      <div class="box-container">
+      
+          <div class="box">
+              <div class="image">
+                  <img src="img/c1.jpg" alt="">
+              </div>
+              <div class="info">
+                  <h3>Libreta "Pink collage"</h3>
+                  <div class="subInfo">
+                      <strong class="price"> $200mxn <span>$250mxn</span> </strong>
+                      <div class="stars">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star-half"></i>
+                      </div>
+                  </div>
+              </div>
+              <div class="overlay">
+                  <a href="#" style="--i:1;" class="fas fa-heart"></a>
+                  <a href="#" style="--i:2;" class="fas fa-shopping-cart"></a>
+                  <a href="#" style="--i:3;" class="fas fa-search"></a>
+              </div>
+          </div>
+      
+          <div class="box">
+              <div class="image">
+                  <img src="img/c2.jpg" alt="">
+              </div>
+              <div class="info">
+                  <h3>Journal "estampa"</h3>
+                  <div class="subInfo">
+                      <strong class="price"> $400mxn <span>$600mxn</span> </strong>
+                      <div class="stars">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star-half"></i>
+                      </div>
+                  </div>
+              </div>
+              <div class="overlay">
+                  <a href="#" style="--i:1;" class="fas fa-heart"></a>
+                  <a href="#" style="--i:2;" class="fas fa-shopping-cart"></a>
+                  <a href="#" style="--i:3;" class="fas fa-search"></a>
+              </div>
+          </div>
+      
+          <div class="box">
+              <div class="image">
+                  <img src="img/c3.jpg" alt="">
+              </div>
+              <div class="info">
+                  <h3>Libreta "Grullas"</h3>
+                  <div class="subInfo">
+                      <strong class="price"> $200mxn <span>$250mxn</span> </strong>
+                      <div class="stars">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star-half"></i>
+                      </div>
+                  </div>
+              </div>
+              <div class="overlay">
+                  <a href="#" style="--i:1;" class="fas fa-heart"></a>
+                  <a href="#" style="--i:2;" class="fas fa-shopping-cart"></a>
+                  <a href="#" style="--i:3;" class="fas fa-search"></a>
+              </div>
+          </div>
+      
+          <div class="box">
+              <div class="image">
+                  <img src="img/c4.jpg" alt="">
+              </div>
+              <div class="info">
+                  <h3>Planner "Colibrí"</h3>
+                  <div class="subInfo">
+                      <strong class="price"> $500mxn <span>$590mxn</span> </strong>
+                      <div class="stars">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star-half"></i>
+                      </div>
+                  </div>
+              </div>
+              <div class="overlay">
+                  <a href="#" style="--i:1;" class="fas fa-heart"></a>
+                  <a href="#" style="--i:2;" class="fas fa-shopping-cart"></a>
+                  <a href="#" style="--i:3;" class="fas fa-search"></a>
+              </div>
+          </div>
+      
+          <div class="box">
+              <div class="image">
+                  <img src="img/c5.jpg" alt="">
+              </div>
+              <div class="info">
+                  <h3>Planner "Pavo real"</h3>
+                  <div class="subInfo">
+                      <strong class="price"> $650mxn <span>$700mxn</span> </strong>
+                      <div class="stars">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star-half"></i>
+                      </div>
+                  </div>
+              </div>
+              <div class="overlay">
+                  <a href="#" style="--i:1;" class="fas fa-heart"></a>
+                  <a href="#" style="--i:2;" class="fas fa-shopping-cart"></a>
+                  <a href="#" style="--i:3;" class="fas fa-search"></a>
+              </div>
+          </div>
+      
+          <div class="box">
+              <div class="image">
+                  <img src="img/c6.jpg" alt="">
+              </div>
+              <div class="info">
+                  <h3>Kit de 4 libretas</h3>
+                  <div class="subInfo">
+                      <strong class="price"> $450mxn <span>$550mxn</span> </strong>
+                      <div class="stars">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star-half"></i>
+                      </div>
+                  </div>
+              </div>
+              <div class="overlay">
+                  <a href="#" style="--i:1;" class="fas fa-heart"></a>
+                  <a href="#" style="--i:2;" class="fas fa-shopping-cart"></a>
+                  <a href="#" style="--i:3;" class="fas fa-search"></a>
+              </div>
+          </div>
+      
+      </div>
+      
+      </section>
+      
+      <!-- arrival section ends -->
+
 
     <!--Inicio sección 4 --------------------------------------------------------------------------------------------->
     <section id="nosotros">

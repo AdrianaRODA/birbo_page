@@ -46,7 +46,7 @@
   background-color: $green-bl;
   color: $white;
 
-  div {
+  span {
     width: 15%;
     margin: 0 3rem;
     padding: 4rem 0;
@@ -103,6 +103,101 @@
   }
 }
 
+/* Section FAVORITOS*/
+#fav {
+  min-height: 80vh;
+  h2{
+    color: $white;
+    text-align: center;
+    padding: 2rem;
+    background-color: $orangepink;
+  }
+  .box-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+    width: 85%;
+    margin: 0 auto;
+    .box {
+      flex: 1 1 20rem;
+      /*border: 0.1rem solid rgba(0, 0, 0, 0.3);*/
+      overflow: hidden;
+      position: relative;
+      margin: 1rem 2rem;
+      .info {
+        h3 {
+          padding: .5rem;
+          font-size: 1rem;
+          font-weight: 600;
+          color: $orangepink;
+        }
+        .subInfo {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 1rem;
+          border-top: 0.1rem solid rgba(0, 0, 0, 0.3);
+          .price {
+            color: #ff3300;
+            font-size: 1rem;
+            span {
+              color: #666;
+              font-size: .8rem;
+              text-decoration: line-through;
+            }
+          }
+          .stars i {
+            color: orange;
+            font-size: 1rem;
+          }
+        }
+      }
+      .image {
+        height: 20rem;
+        padding: 0;
+        text-align: center;
+        background: #f0f0f0;
+        img {
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 20rem;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.3);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: scale(0);
+        a {
+          font-size: 1.5rem;
+          padding: 1rem 1.5rem;
+          background: #fff;
+          color: #666;
+          margin: 1rem;
+          transform: translateY(-15rem);
+          transition-delay: calc(0.1s);
+        }
+      }
+      &:hover .overlay {
+        transform: scale(1);
+        a{
+          transform: translateY(0rem);
+          &:hover{
+            color:$orangepink;
+          }
+        }
+      }
+    }
+  }
+}
+
 /* Section 4 NOSOTROS */
 #nosotros {
   background-color: $black;
@@ -119,7 +214,7 @@
       h2 {
         color: $orangepink;
       }
-      p{
+      p {
         color: $white;
         text-align: center;
         margin: 1rem;
