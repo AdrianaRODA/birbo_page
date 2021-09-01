@@ -119,7 +119,17 @@ footer a {
   transform: translate(-50%, -50%);
   text-align: center;
 }
-.carousel-inner .carousel-item .container h1,
+.carousel-inner .carousel-item .container h1 {
+  color: white;
+  font-size: 4rem;
+  margin-top: 8.5rem;
+}
+@media only screen and (max-width: 1024px) {
+  .carousel-inner .carousel-item .container h1 {
+    font-size: 3rem;
+    margin-top: 7.5rem;
+  }
+}
 .carousel-inner .carousel-item .container h2 {
   color: #ff6666;
   font-size: 45px;
@@ -286,7 +296,7 @@ footer a {
   padding: 5% 0;
 }
 #nosotros div {
-  background-image: url(../img/bird-texture.jpg);
+  background-image: url(../img/g.jpg);
   background-size: cover;
 }
 #nosotros div div {
@@ -299,10 +309,19 @@ footer a {
 #nosotros div div h2 {
   color: #ff6666;
 }
+#nosotros div div h2 span {
+  display: block;
+}
 #nosotros div div p {
   color: white;
   text-align: center;
   margin: 1rem;
+}
+#nosotros div div p span {
+  display: block;
+  color: white;
+  font-weight: 700;
+  font-size: 30px;
 }
 @media only screen and (max-width: 768px) {
   #nosotros div div {
@@ -312,9 +331,16 @@ footer a {
 
 /* Section 5 CONTACTO MAPA */
 #contacto {
+  background-color: #ff6666;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+#contacto h2 {
+  color: white;
+}
+#contacto h3 {
+  color: #1a292b;
 }
 @media only screen and (max-width: 1200px) {
   #contacto {
