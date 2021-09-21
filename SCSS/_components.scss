@@ -66,6 +66,10 @@
     padding: 0 4rem;
     width: 85%;
     margin: 0 auto;
+
+    @media only screen and (max-width: 768px) {
+      padding: 0;
+    }
     .box {
       flex: 1 1 20rem;
       /*border: 0.1rem solid rgba(0, 0, 0, 0.3);*/

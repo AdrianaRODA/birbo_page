@@ -146,6 +146,11 @@ footer a {
   width: 85%;
   margin: 0 auto;
 }
+@media only screen and (max-width: 768px) {
+  .commerce .box-container {
+    padding: 0;
+  }
+}
 .commerce .box-container .box {
   flex: 1 1 20rem;
   /*border: 0.1rem solid rgba(0, 0, 0, 0.3);*/
