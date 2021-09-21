@@ -56,11 +56,27 @@ body {
 /* FOOTER ----------------------------------------------------*/
 
 footer {
-    display: flex;
+   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 2rem;
   background-color: $black;
+
+  .modal-title {
+    color:black;
+  }
+
+  .modal-body {
+    color: black;
+
+    span{
+      display: block;
+      font-weight: 600;
+    }
+  }
+  
+
+
   a{
     color: $white;
     font-size: 15px;

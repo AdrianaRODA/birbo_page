@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -103,8 +103,7 @@
             <div class="container">
               <h2>Para todos los estilos</h2>
               <p>
-               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere
-               aliquid distinctio atque at unde similique, 
+               Selecciona entre todos las variedades, el que mejor se adapte a ti :) 
               </p>
               <a href="#lineas" class="botonBanner">¡Quiero verlos!</a>
             </div>
@@ -140,13 +139,11 @@
     <!--Fin sección 2-->
 
 
-    
-
 
     <!-- Inicio sección 3--------------------------------------------------------------------------------------------->
 
     <section id="lineas">
-      <h2>Pensadas y hechas para <br> todos los estilos</h2>
+      <h2> <span>Pensadas y hechas </span> para todos los estilos </h2>
 
       <div>
         <div class="parent">
@@ -220,7 +217,7 @@
       
           <div class="box">
               <div class="image">
-                  <img src="img/c3.jpg" alt="">
+                  <img src="img/c3.jpg" alt="libreta grullas">
               </div>
               <div class="info">
                   <h3>Libreta "Grullas"</h3>
@@ -244,7 +241,7 @@
       
           <div class="box">
               <div class="image">
-                  <img src="img/c4.jpg" alt="">
+                  <img src="img/c4.jpg" alt="Planner Colibrí">
               </div>
               <div class="info">
                   <h3>Planner "Colibrí"</h3>
@@ -268,7 +265,7 @@
       
           <div class="box">
               <div class="image">
-                  <img src="img/c5.jpg" alt="">
+                  <img src="img/c5.jpg" alt="Planner Pavo Real">
               </div>
               <div class="info">
                   <h3>Planner "Pavo real"</h3>
@@ -292,7 +289,7 @@
       
           <div class="box">
               <div class="image">
-                  <img src="img/c6.jpg" alt="">
+                  <img src="img/c6.jpg" alt="Kit de cuatro libretas">
               </div>
               <div class="info">
                   <h3>Kit de 4 libretas</h3>
@@ -318,16 +315,18 @@
       
       </section>
       
-      <!-- arrival section ends -->
+      <!-- Final Sección FAVORITOS -->
 
 
     <!--Inicio sección 4 --------------------------------------------------------------------------------------------->
     <section id="nosotros">
       <div>
       <div>
-        <h2> <span>🦜</span> Inspirados en la belleza y singularidad de las aves</h2>
-        <p>El proyecto "Birbo" surgió de la unión de nuestras ganas de emprender y nuestro gran amor hacia nuestros "poyos", los responsables de la imagen y escencia de Birbo 
-          <span>❤️Lázaro & Jerónimo❤️</span>
+        <h2> <span>🦜</span> 
+          Inspirados en la belleza y singularidad de las aves</h2>
+        <p>El proyecto "Birbo" surgió de la unión de nuestras ganas de emprender y nuestro gran amor 
+          hacia nuestros "poyos", los responsables de la imagen y escencia de Birbo 
+          <span>Lázaro & Jerónimo</span>
           Dos hermosos y esponjosos periquitos Agapornis.
         </p>
       </div>
@@ -377,20 +376,96 @@
     <!--Inicio Footer --------------------------------------------------------------------------------------------->
 
     <footer>
-      <a href="https://Facebook.com">
-        <i class="fab fa-facebook"></i> Facebook
-      </a>
+      <div>
+        <!-- Button modal ENVIOS -->
+         <button class="bn11" data-bs-toggle="modal" data-bs-target="#envios">
+           Envíos
+         </button>
 
-      <a href="https://instagram.com">
-        <i class="fab fa-instagram-square"></i> Instagram
-      </a>
+        <!-- Modal ENVIOS-->
+          <div class="modal fade" id="envios" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">ENVÍOS</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
 
-      <a href="https://pinterest.com">
-        <i class="fab fa-pinterest"></i> Pinterest
-      </a>
+            <div class="modal-body">
+              <span>Envíos a la República Mexicana.</span>
+              Todos los pedidos se envían a través de Fedex y se envían dentro de las 48 horas posteriores a la recepción 
+              del pedido, a menos que se especifique lo contrario. Se le enviará una confirmación de envío y un número de 
+              seguimiento tan pronto como se lo enviemos. Cualquier pedido realizado el fin de semana se enviará el lunes. 
+              Si su pedido incluye libretas personalizadas, agendas u otros productos que requieras personalización el tiempo 
+              de producción es de 3 a 5 días hábiles (sin contar fines de semana) y se enviará todo el pedido junto.
+          
+              <span>Envíos en Chihuahua</span> 
+              Todos los pedidos se envían a través de un proveedor local y se envían 48 horas posteriores a la recepción, a 
+              menos que se especifique lo contrario.  Se le enviará una confirmación de envío tan pronto como se lo enviemos. 
+              Cualquier pedido realizado el fin de semana se enviará el lunes. Si su pedido incluye libretas personalizadas, 
+              agendas u otros productos que requieras personalización el tiempo de producción es de 3 a 5 días hábiles (sin 
+              contar fines de semana) y se enviará todo el pedido junto.
+            </div>
+
+            <div class="modal-footer">
+              <button type="button" class="botonBanner" data-bs-dismiss="modal">
+               Entendido
+              </button>
+           </div>
+          </div>
+       </div>
+          </div>
+
+        <!-- Button modal TERMINOS -->
+          <button class="bn11" data-bs-toggle="modal" data-bs-target="#devoluciones">
+      Devoluciones
+          </button>
+
+        <!-- Modal TERMINOS-->
+          <div class="modal fade" id="devoluciones" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+     <div class="modal-dialog">
+       <div class="modal-content">
+         <div class="modal-header">
+           <h5 class="modal-title" id="exampleModalLabel">DEVOLUCIONES</h5>
+             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+         </div>
+
+         <div class="modal-body">
+          <span>Devoluciones.</span>
+          Todos los artículos son de venta final, aunque ocasionalmente se pueden hacer excepciones. 
+          Envíe un correo electrónico a hola@birbo.mx si tiene un problema con su pedido o través de 
+          nuestras redes sociales. Para hacer una devolución del pedido y el reintegro del costo es necesario 
+          que los productos estén sin haber sido usados.
+        </div>
+
+         <div class="modal-footer">
+           <button type="button" class="botonBanner" data-bs-dismiss="modal">
+            Entendido
+           </button>
+        </div>
+       </div>
+      </div>
+          </div>
+     </div>
+
+
+
+     <div>
+       <a href="https://Facebook.com">
+         <i class="fab fa-facebook"></i>
+       </a>
+
+       <a href="https://instagram.com">
+         <i class="fab fa-instagram-square"></i>
+       </a>
+
+       <a href="https://pinterest.com">
+         <i class="fab fa-pinterest"></i>
+       </a>
+    </div> 
     </footer>
 
-    <!--Fin footer-->
+   <!--Fin footer-->
 
 
 

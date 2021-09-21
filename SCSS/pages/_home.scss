@@ -115,6 +115,12 @@
 }
 
 /* Section FAVORITOS*/
+#lineas{
+  span{
+    display: block;
+  }
+}
+
 #fav {
   min-height: 80vh;
   h2{
@@ -214,7 +220,7 @@
   background-color: $black;
   padding: 5% 0;
   div {
-    background-image: url(../img/g.jpg);
+    background-image: url(../img/agap.jpg);
     background-size: cover;
     div {
       background-image: none;
@@ -279,6 +285,7 @@
     form {
       textarea {
         width: 100%;
+        border-radius: 1rem;
       }
     }
   }
